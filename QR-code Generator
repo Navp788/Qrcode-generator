@@ -1,0 +1,10 @@
+# first you need to install pillow qrcode by using pip install pillow qrcode into cmd box.
+#After that..
+#call library
+from PIL import Image,ImageDraw
+import qrcode
+#enter your name or anything.. 
+a=input("ENTER YOUR INPUT HERE TO CHANGE INTO QRCODE  :")
+img=qrcode.make(a)
+#To save your Qrcode image  
+img.save("your file name.png")
